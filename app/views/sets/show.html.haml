@@ -1,0 +1,12 @@
+- title "Set"
+
+%p
+  %strong Name:
+  = @set.name
+
+%p
+  = link_to "Edit", edit_set_path(@set)
+  |
+  = link_to "Destroy", @set, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", sets_path

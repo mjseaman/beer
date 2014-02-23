@@ -1,0 +1,13 @@
+- title "Sets"
+
+%table
+  %tr
+    %th Name
+  - for set in @sets
+    %tr
+      %td= set.name
+      %td= link_to 'Show', set
+      %td= link_to 'Edit', edit_set_path(set)
+      %td= link_to 'Destroy', set, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Set", new_set_path
