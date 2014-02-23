@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Level.delete_all!
+Level.create(name:"Category")
+Level.create(name:"Specific Product")
+p "Database seeded."
