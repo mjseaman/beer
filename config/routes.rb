@@ -1,7 +1,8 @@
-Beer::Application.routes.draw do
-  resources :sets
+Beer::Application.routes.draw do  # The priority is based upon order of creation:
+  
+  resources :products
+  resources :items
 
-  # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:

@@ -12,7 +12,7 @@ gem 'rails', '3.2.13'
 
 #  PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 # gem install pg should now work. (This is what worked for me.)
-gem 'pg'
+gem 'sqlite3'
 gem 'thin'
 
 gem 'rest-client'

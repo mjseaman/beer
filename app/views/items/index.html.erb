@@ -1,0 +1,21 @@
+<% title "Items" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Product</th>
+  </tr>
+  <% for item in @items %>
+    <tr>
+      <td><%= item.name %></td>
+      <td><%= item.level %></td>
+      <td><%= item.product_id %></td>
+      <td><%= link_to "Show", item %></td>
+      <td><%= link_to "Edit", edit_item_path(item) %></td>
+      <td><%= link_to "Destroy", item, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Item", new_item_path %></p>
